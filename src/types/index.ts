@@ -58,6 +58,30 @@ export interface Category {
   productCount?: number;
 }
 
+export interface WebsiteCategory {
+  id: string;
+  name: string;
+  slug: string;
+  description?: string;
+  color?: string;
+  order: number;
+  websiteCount?: number;
+}
+
+export interface Website {
+  id: string;
+  name: string;
+  url: string;
+  description: string;
+  categoryId: string;
+  category: string;
+  thumbnail: string;
+  featured: boolean;
+  tags: string[];
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface CartItem {
   productId: string;
   name: string;
